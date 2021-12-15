@@ -44,11 +44,11 @@ POST {{baseUrl}}/{{resourceName}}
 Content-Type: application/json
 
 {
-   "categoryId": "8fc867e6-3b55-4c35-a82c-271d1dbed37e",
-    "name": "Nokia 1280",
-    "price": 20,
-    "description": "Boston's most advanced compression wear technology increases muscle oxygenation, stabilizes active muscles",
-    "thumbnailUrl": "http://placeimg.com/200/200"
+   "categoryId": "",
+    "name": "",
+    "price": ,
+    "description": "",
+    "thumbnailUrl": ""
 }
 
 ###

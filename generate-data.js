@@ -22,7 +22,7 @@ const randomCategoryList =(n)=>{
   {
     const category ={
       id : faker.random.uuid(),
-      name: faker.commerce.department(),
+      name: faker.commerce.product(),
       createdAt:Date.now(),
       updatedAt:Date.now(),
     }
@@ -45,6 +45,7 @@ const randomProductList = (categoryList, numberOfProducts) => {
           name:faker.commerce.productName(),
           price:Number.parseFloat(faker.commerce.price()),
           description:faker.commerce.productDescription(),
+          material:faker.commerce.productMaterial(),
           createdAt:Date.now(),
           updatedAt:Date.now(),
           thumbnailUrl:faker.image.imageUrl(200,200),
