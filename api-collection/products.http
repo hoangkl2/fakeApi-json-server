@@ -1,0 +1,77 @@
+@baseUrl=http://localhost:3000/api
+@resourceName=products
+#products
+
+# @name getAllProducts
+
+GET {{baseUrl}}/{{resourceName}}
+
+###
+
+# @name fillterPriceProducts
+
+GET {{baseUrl}}/{{resourceName}}?price_gte=500
+
+###
+
+# @name fillterNameProducts
+
+GET {{baseUrl}}/{{resourceName}}?name_like=nokia
+
+
+###
+
+# @name pagination
+GET {{baseUrl}}/{{resourceName}}?_page=1&_limit=5
+
+###
+
+# @name sort_asc
+
+GET {{baseUrl}}/{{resourceName}}?_sort=price&_order=asc
+
+###
+
+# @name sort_desc
+
+GET {{baseUrl}}/{{resourceName}}?_sort=price&_order=desc
+
+###
+
+# @name addNew
+
+POST {{baseUrl}}/{{resourceName}}
+Content-Type: application/json
+
+{
+   "categoryId": "8fc867e6-3b55-4c35-a82c-271d1dbed37e",
+    "name": "Nokia 1280",
+    "price": 20,
+    "description": "Boston's most advanced compression wear technology increases muscle oxygenation, stabilizes active muscles",
+    "thumbnailUrl": "http://placeimg.com/200/200"
+}
+
+###
+
+# @name update
+
+PATCH  {{baseUrl}}/{{resourceName}}/O3-lmqD
+Content-Type: application/json
+
+{
+  "name": "Quần rin",
+  "price": 50
+}
+
+###
+
+# @name remove
+
+DELETE  {{baseUrl}}/{{resourceName}}/myihMjs
+
+# @name getAllProducts
+
+###
+
+
+GET {{baseUrl}}/products

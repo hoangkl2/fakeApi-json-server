@@ -1,0 +1,42 @@
+@baseUrl=http://localhost:3000/api
+@resourceName=products
+#categories
+
+# @name getAllCategories
+
+GET {{baseUrl}}/categories
+
+###
+
+# @name addNewCategory
+
+POST {{baseUrl}}/categories
+Content-Type: application/json
+
+{
+  "name":"Laptop"
+}
+
+###
+
+# @name update
+
+PATCH  {{baseUrl}}/categories/2
+Content-Type: application/json
+
+{
+  "name":"Laptop"
+}
+
+###
+
+# @name removeCategory
+
+DELETE  {{baseUrl}}/categories/2
+
+# @name getAllProducts
+
+###
+
+
+GET {{baseUrl}}/products
