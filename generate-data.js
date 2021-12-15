@@ -62,8 +62,8 @@ const randomProductList = (categoryList, numberOfProducts) => {
 (()=>{
   //random data
 
-  const categoryList =randomCategoryList(10);
-  const productList=randomProductList(categoryList,10);
+  const categoryList =randomCategoryList(20);
+  const productList=randomProductList(categoryList,20);
 
   //prepare db object
   const db={
