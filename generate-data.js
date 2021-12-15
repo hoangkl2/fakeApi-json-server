@@ -22,6 +22,7 @@ const randomCategoryList =(n)=>{
   {
     const category ={
       id : faker.random.uuid(),
+      thumbnailUrl:faker.image.image(60,60),
       name: faker.commerce.product(),
       createdAt:Date.now(),
       updatedAt:Date.now(),
